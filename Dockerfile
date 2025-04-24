@@ -20,7 +20,7 @@
     
     # Copy only the built jar from the builder stage
     #COPY --from=builder /app/target/*.jar app.jar
-    COPY /home/ubuntu/Java_code/*.jar app.jar
+    COPY *.jar app.jar
     
     # Expose application port
     EXPOSE 8080
